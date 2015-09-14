@@ -1,0 +1,323 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial';
+    font-size: 16px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.clear:after {
+    display: block;
+    width: 100%;
+    content: '';
+    overflow: hidden;
+}
+
+header {
+    background-color: #434343;
+    padding: 0 10px;
+}
+
+header nav ul {
+    float: left;
+}
+
+header nav ul li {
+    float: left;
+    margin-right: 5px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    display: block;
+    height: 40px;
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+header nav ul li a.active, header nav ul li a:hover {
+    background-color: #666666;
+}
+
+header .langs-list {
+    float: right;
+}
+
+header .langs-list li {
+    float: left;
+    margin-right: 5px;
+}
+
+header .langs-list li:last-child {
+    margin-right: 0;
+}
+
+header .langs-list li a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    margin-top: 5px;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+}
+
+header .langs-list li a.active {
+    background-color: #666666;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.content .center-list {
+    text-align: center;
+}
+
+.content .center-list .list {
+    display: inline-block;
+    text-align: left;
+    min-width: 500px;
+}
+
+.content .center-list .list table {
+    width: 100%;
+}
+
+.content .list .actions {
+    float: right;
+}
+
+.content .list .actions li {
+    float: left;
+}
+
+.content .list .actions li a {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+.content .list .actions .add {
+    background-image: url('img/add.png');
+}
+
+.content .list .actions .edit {
+    background-image: url('img/edit.png');
+}
+
+.content .list .actions .delete {
+    background-image: url('img/delete.png');
+}
+
+.content .list .actions .up {
+    background-image: url('img/up.png');
+}
+
+.content .list .actions .down {
+    background-image: url('img/down.png');
+}
+
+.content .list table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.content .list table th {
+    padding: 0 10px 5px 10px;
+    border-bottom: 1px solid darkgray;
+}
+
+.content .list table td {
+    text-align: center;
+    padding: 10px;
+    border-left: 1px dashed lightgray;
+    border-bottom: 1px solid darkgray;
+}
+
+.content .list table td:first-child {
+    border-left: 1px solid darkgray;
+}
+
+.content .list table td:last-child {
+    border-right: 1px solid darkgray;
+}
+
+.content .list table td .active {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.content .list table td .active.on {
+    background-image: url('img/check.png');
+}
+
+.content .list table td .active.off {
+    background-image: url('img/uncheck.png');
+}
+
+.content .list table td ul.actions {
+    float: none;
+    display: inline-block;
+}
+
+.content .center-form {
+    text-align: center;
+}
+
+.content .center-form form {
+    display: inline-block;
+    text-align: left;
+}
+
+.content .center-form form .field {
+    margin-bottom: 20px;
+}
+
+.content .center-form form .field:after {
+    content: '';
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content .center-form form .field label {
+    float: left;
+    width: 200px;
+    height: 30px;
+    margin-right: 20px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.content .center-form form .field input[type=text] {
+    float: left;
+    width: 300px;
+    height: 26px;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0 5px;
+}
+
+.content .center-form form .field select {
+    float: left;
+    width: 314px;
+    height: 26px;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0 5px;
+}
+
+.content .center-form form .field textarea {
+    float: left;
+    width: 300px;
+    height: 26px;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0 5px;
+    height: 150px;
+}
+
+.content .center-form form .field input[type=checkbox] {
+    display: none;
+}
+
+.content .center-form form .field input[type=checkbox] + .checkbox-overlay {
+    float: left;
+    width: 24px;
+    height: 24px;
+    background-image: url('img/uncheck.png');
+    cursor: pointer;
+}
+
+.content .center-form form .field input[type=checkbox]:checked + .checkbox-overlay {
+    background-image: url('img/check.png');
+}
+
+.content .center-form form .field .langs-field {
+    float: left;
+    display: none;
+}
+
+.content .center-form form .field .langs-field.active {
+    display: block;
+}
+
+.content .center-form form .field .langs-list {
+    float: right;
+    margin-left: 10px;
+}
+
+.content .center-form form .field .langs-list li {
+    float: left;
+    margin-right: 5px;
+}
+
+.content .center-form form .field .langs-list li:last-child {
+    margin-right: 0;
+}
+
+.content .center-form form .field .langs-list li a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+}
+
+.content .center-form form .field .langs-list li a.active {
+    background-color: #ccc;
+}
+
+.content .center-form form .uploader-value {
+    margin-left: 220px;
+}
+
+.content .center-form form .error {
+    font-size: 14px;
+    font-weight: bold;
+    color: #c7254e;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.content .center-form form input[type=submit] {
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+}
